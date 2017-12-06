@@ -1,1 +1,24 @@
+canvas {
+  border: 1px solid blue;
+  margin-top: 10px;
+  background-image: "https://static.vecteezy.com/system/resources/previews/000/101/514/non_2x/christmas-pattern-background-vector.jpg";
+}
+
+progress {
+  width: 300px;
+}
+
+h1 {
+  font-family: "Bungee", cursive;
+}
+
+body {
+  margin-top: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Bungee", cursive;
+}
 
