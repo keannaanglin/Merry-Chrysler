@@ -156,3 +156,4 @@ function drawScene() {
 }
 
 canvas.addEventListener("click", startGame);
+
