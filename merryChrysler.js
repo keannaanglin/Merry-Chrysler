@@ -77,13 +77,13 @@ function createRandomEnemy() {
       Math.floor(Math.random() * canvas.height),
       12,
       "rgba(200, 100, 0, 0.7)",
-      0.02
+      Math.random() * 0.04 + 0.005
     )
   );
 }
 
 let enemies = [
-  new Enemy(80, 200, 12, "rgba(250, 0, 50, 0.8)", 0.02),
+  new Enemy(80, 200, 12, "rgba(250, 0, 50, 0.8)", 0.015),
   new Enemy(200, 250, 12, "rgba(200, 100, 0, 0.7)", 0.01),
   new Enemy(150, 180, 12, "rgba(50, 10, 70, 0.5)", 0.02)
 ];
@@ -156,4 +156,3 @@ function drawScene() {
 }
 
 canvas.addEventListener("click", startGame);
-
