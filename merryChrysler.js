@@ -1,7 +1,7 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 const progressBar = document.querySelector("progress");
-score = 0;
+let score = 0;
 const backgroundImage = new Image();
 
 const newEnemyInterval = 10000;
@@ -103,11 +103,11 @@ function moveToward(leader, follower, speed) {
 
 function pushOff(c1, c2) {
   let [dx, dy] = [c2.x - c1.x, c2.y - c1.y];
-  const L = Math.hypot(dx, dy);
+  const distanceBetween = Math.hypot(dx, dy);
   let distToMove = c1.radius + c2.radius - L;
   if (distToMove > 0) {
-    dx /= L;
-    dy /= L;
+    dx /= distanceBetween;
+    dy /= distanceBetween;
     c1.x -= dx * distToMove / 2;
     c1.y -= dy * distToMove / 2;
     c2.x += dx * distToMove / 2;
